@@ -1,3 +1,7 @@
+/*Problem: Given nums = [2, 7, 11, 15], target = 9
+Solution: if nums[0] + nums[1] = 2 + 7 = 9, return [0, 1] */
+
+
 //Approach 1: Brute Force
 
 func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
