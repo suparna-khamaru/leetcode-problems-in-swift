@@ -4,22 +4,22 @@ func trap(_ height: [Int]) -> Int {
 
     var i = 0
     var j = height.count - 1
-    var maxItem = 0
+    var total = 0
 
     var i_max = 0
     var j_max = 0
 
     while (i < j) {
         if (height[i] < height[j]) {
-            (height[i] >= i_max) ? (i_max = height[i]) : (maxItem += (i_max - height[i]))
+            (height[i] >= i_max) ? (i_max = height[i]) : (total += (i_max - height[i]))
             i+=1
         }
         else {
-            (height[j] >= j_max) ? (j_max = height[j]) : (maxItem += (j_max - height[j]))
+            (height[j] >= j_max) ? (j_max = height[j]) : (total += (j_max - height[j]))
             j-=1
         }
     }
-    return maxItem;
+    return total;
 }
 
 print(trap([0,1,0,2,1,0,1,3,2,1,2,1]))      // 6
