@@ -60,3 +60,50 @@ func trap(_ height: [Int]) -> Int {
     }
     return ans
  }
+
+/*
+Debug print output for each while loop run:
+
+For trap([1,8,6,2,5,4,8,3,7]))   
+
+10 |
+ 9 |
+ 8 |    |````|                   |````|
+ 7 |    |    |                   |    |    |````|
+ 6 |    |    |````|              |    |    |    |
+ 5 |    |    |    |    |````|    |    |    |    |
+ 4 |    |    |    |    |    |````|    |    |    |
+ 3 |    |    |    |    |    |    |    |````|    |
+ 2 |    |    |    |````|    |    |    |    |    |
+ 1 |````|    |    |    |    |    |    |    |    |
+-------------------------------------------------
+ 0 | 1  | 8  | 6  |  2 |  5 | 4  |  8 | 3  | 7    
+
+
+    height[left]: 1, height[right]: 7
+    left_max: 1
+
+    height[left]: 8, height[right]: 7
+    right_max: 7
+
+    height[left]: 8, height[right]: 3
+    ans: 4
+
+    height[left]: 8, height[right]: 8
+    right_max: 8
+
+    height[left]: 8, height[right]: 4
+    ans: 8
+
+    height[left]: 8, height[right]: 5
+    ans: 11
+
+    height[left]: 8, height[right]: 2
+    ans: 17
+
+    height[left]: 8, height[right]: 6
+    ans: 19
+
+    19
+
+*/
