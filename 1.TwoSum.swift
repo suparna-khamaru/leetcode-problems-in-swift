@@ -68,8 +68,8 @@ func twoSum3(nums: [Int], target: Int) -> (Int, Int)? {
      return nil
  }
    
-print(twoSum2(nums: [1], target: 1))                   // nil
-print(twoSum2(nums: [2,7,11,15], target: 13))          // (2,0)
-print(twoSum2(nums: [3,2,4], target: 6))               // (2,1)
-print(twoSum2(nums: [3,2,3], target: 6))               // (2,0)
-print(twoSum2(nums: [3,2,5,6,8,9,1,4], target: 10))    // (4,1)
+print(twoSum3(nums: [1], target: 1))                   // nil
+print(twoSum3(nums: [2,7,11,15], target: 13))          // (2,0)
+print(twoSum3(nums: [3,2,4], target: 6))               // (2,1)
+print(twoSum3(nums: [3,2,3], target: 6))               // (2,0)
+print(twoSum3(nums: [3,2,5,6,8,9,1,4], target: 10))    // (4,1)
