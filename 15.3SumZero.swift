@@ -42,7 +42,7 @@ func triplets(_ array: [Int],
         var dict = [[Int]]()
         let sortedArray = array.sorted()
         
-        for i in sortedArray.indices where i < sortedArray.count-3 {
+        for i in sortedArray.indices where i <= sortedArray.count-3 {
             
             var j = i+1
             var k = array.count-1
